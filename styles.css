@@ -1,0 +1,138 @@
+.h1 {
+  text-align: center;
+  text-size-adjust: 250px;
+}
+body {
+  background: linear-gradient(
+    -45deg,
+    #7400b8,
+    #6930c3,
+    #023e8a,
+    #5e60ce,
+    #0096c7,
+    #00b4d8,
+    #48cae4,
+    #90e0ef,
+    #72efdd,
+    #80ffdb
+  );
+  position: relative;
+  animation: background-animation 30s linear infinite;
+  background-size: 1000% 1000%;
+}
+@keyframes background-animation {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+.icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  align-items: center;
+}
+.icon:hover {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+div.header {
+  text-align: center;
+  font-size: 50px;
+  color: #e63946;
+  text-shadow: whitesmoke 2px 2px 2px;
+  font-style: bold;
+}
+div.header::before {
+  filter: blur(10px);
+}
+div.header:hover {
+  font-size: 70px;
+  text-shadow: 1px 1px 1px #24416b, 1px 2px 1px #24416b, 1px 3px 1px #767774,
+    1px 4px 1px whitesmoke, 1px 3px 1px #767774, 1px 4px 1px #767774,
+    1px 5px 1px whitesmoke, 1px 6px 1px whitesmoke, 1px 7px 1px whitesmoke;
+}
+div.footer {
+  color: teal;
+  font-size: 20px;
+}
+.table {
+  font-weight: 1000;
+  font-size: 24px;
+  background-color: #a8dadc;
+  margin: 10px;
+  text-align: center;
+  border: 20px solid #003049;
+  border-radius: 35px;
+  width: 100%;
+  padding: 10px;
+  border-style: solid;
+}
+
+.names {
+  font-size: 36px;
+  font-style: bold;
+  color: #2b2d42;
+}
+p {
+  font-size: 24px;
+  color: #b5838d;
+}
+
+footer {
+  text-align: center;
+  margin-top: 150px;
+  padding: 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  border: 10px solid #232943;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #a8dadc, #457b9d);
+  border-radius: 3px;
+}
+.button {
+  padding: 15px 32px;
+  text-align: center;
+
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 25px;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button {
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background: linear-gradient(-45deg, #e5989b, #b5838d);
+  border: none;
+  color: #e63946;
+  padding: 15px 32px;
+  text-align: center;
+
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 25px;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
